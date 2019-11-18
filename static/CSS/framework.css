@@ -1,0 +1,268 @@
+body {
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
+}
+
+*:focus,
+button:focus {
+  outline: none !important;
+}
+
+/* added Oliver */
+.PageContainer {
+  padding-top: 100px;
+}
+
+.FaqSubCategoryContainer {
+  flex-grow: 1;
+  background: #f6f6f6;
+}
+
+.FaqMainContainer {
+  min-height: calc(100vh - 100px);
+  background: #f6f6f6;
+}
+
+.FaqMainCardContainer {
+  min-height: 120px;
+  transition: all 160ms ease-in-out;
+  border: 1px solid #f6f6f6;
+}
+
+.FaqMainCardContainer:hover {
+  /* background: #fbfbfb; */
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
+  /* border-color: #b7b7b7; */
+  border-color: #e4e3e3;
+}
+
+.FaqMainCardContainer:hover h3 {
+  color: #3671d3;
+}
+
+.FaqMainCardContent h3 {
+  /* color: #4185f4;
+  font-size: 18px; */
+  font-size: 22px;
+  color: var(--COLOR_TEXT_MAIN_TITLE);
+}
+
+.FaqMainCardIcon {
+  width: 60px;
+  position: absolute;
+  left: -75px;
+  top: -19px;
+  transition: 300ms ease;
+}
+
+@media (max-width: 991px) {
+  .FaqMainCardIcon {
+    width: 45px;
+    left: -55px;
+    top: -10px;
+  }
+}
+
+.FaqMainCardIcon img {
+  width: 100%;
+}
+
+.FaqLink {
+  cursor: pointer;
+  border: 1px solid #eee;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  color: #515050;
+  font-size: 18px;
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.FaqSubcategoryContainer {
+  width: 100%;
+}
+
+.FaqArticleCardContainer {
+  border: 1px solid #eee;
+  margin: 15px;
+  border-radius: 5px;
+  max-width: 900px;
+}
+
+.FaqArticleCardContainer h4 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.FaqArticleCardContainer p {
+  font-size: 17px;
+}
+
+.FaqArticleCardContainer li {
+  list-style-type: disc;
+  padding-bottom: 15px;
+}
+
+.FaqRatingToggle h3 {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+  color: var(--COLOR_TEXT_SECTION_TITLE);
+}
+
+.FaqRatingToggle h3:hover {
+  color: var(--COLOR_PRIMARY);
+}
+
+.FaqCollapseContainer {
+  padding: 2px;
+  height: 160px;
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.FaqCollapseCard {
+  height: 50px;
+  position: relative;
+  margin: 2px;
+}
+
+.FaqCollapseCard svg {
+  position: absolute;
+  left: 35%;
+  top: 20px;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.FaqRatingComment {
+  transition: all 300ms ease-in-out;
+  color: var(--COLOR_TEXT_SECTION_TITLE);
+  margin-top: 10px;
+}
+
+.FaqAuthorImage {
+  height: 40px;
+}
+.FaqAuthorImage img {
+  height: 100%;
+}
+
+.FaqLink:hover {
+  background: #f5f6f6;
+  color: #212529;
+}
+
+.FaqBackButton {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: #515151;
+}
+
+.FaqFormButton {
+  cursor: pointer;
+  background: var(--COLOR_PRIMARY);
+  color: white;
+}
+
+.FaqFormButton:hover {
+  background: var(--COLOR_PRIMARY_HOVER);
+  color: white;
+}
+
+.FaqBackButton:hover {
+  background: #f7f7f7;
+}
+
+.FaqBackButton:focus {
+  outline: none;
+}
+
+/*
+* USE below vars as follows :
+* background-color: var(--COLOR_PRIMARY);
+*/
+:root {
+  --COLOR_PRIMARY: #4185f4; /* #45d0e1; /*  #2a5bd7;  OLI STATIC => #3672fe; // BEN => #4285f4ff; // BITLY BLUE => #2A5BD7; hover: #0352d0 then color: #fefefe; light => background:EDF2FE; */
+  --COLOR_PRIMARY_HOVER: #0352d0; /* #0352d0; */
+  --COLOR_SECONDARY: #e9e4e8; /* #0b1736; */
+  --COLOR_GREY: #7d7d7d;
+  --COLOR_GREY_LIGHT: #e6e6e6;
+  --COLOR_GREY_SUPER_LIGHT: #f0f0f0;
+  --COLOR_BLUE_PASTER: #688de8;
+
+  --COLOR_BLUE_FORM: #a1b8f3;
+  --COLOR_GREY_LIGHT_FORM: #9ca1ad;
+  --COLOR_GREY_FORM: #828387;
+  --COLOR_GREY_DARK_FORM: #36383b;
+  --COLOR_BLUE_FORM_DARK: #1b3987;
+
+  --COLOR_GREEN: #207dae;
+  --COLOR_GREEN_2: #5ce6cf;
+  --COLOR_DEEP_GREEN: #9beaee;
+
+  --COLOR_FOOTER_LINK: #505664;
+  --COLOR_FOOTER_LINK_HOVER: #eee;
+  --COLOR_SECONDARY_FOOTER_BACGROUND: #f8f8f8;
+  --COLOR_SECONDARY_FOOTER_LINK: #9a9a9a;
+  --COLOR_SUBFOOTER_TEXT: #9a9a9a;
+
+  --COLOR_NAVBAR_MOBILE_LINK: #36383b;
+  --COLOR_NAVBAR_LARGE_LINK: #1d1f21;
+
+  --COLOR_SOCIAL_LINK: #505664;
+  --COLOR_FACEBOOK: #3b5998;
+  --COLOR_INSTAGRAM: #8a3ab9;
+  --COLOR_TWITTER: #38a1f3;
+
+  --COLOR_BACKGROUND_GREY: #f0f0f0;
+  --COLOR_BACKGROUND_BLUE_GREY: #f4f9fe; /* #edf2fe; */
+  --COLOR_BACKGROUND_BLUE_GREY_HOVER: #e5edff;
+  --COLOR_BACKGROUND_GREY_LIGHT: #f5f9fc;
+
+  --COLOR_ICON_GREY: #6c7c9e;
+  --COLOR_ICON_GREY_LIGHT: #e5ecf3;
+
+  --COLOR_TEXT_MAIN_TITLE: rgb(68, 68, 68); /* #212529; */
+  --COLOR_TEXT_MAIN_SUBTITLE: rgb(68, 68, 68); /* #56575b;*/
+  --COLOR_TEXT_SECTION_TITLE: rgb(68, 68, 68); /*#252628;*/
+  --COLOR_TEXT_SECTION_SUBTITLE: rgb(68, 68, 68); /*#56575b;*/
+  --COLOR_TEXT_SECTION_H3: rgb(68, 68, 68); /*#1d1f21;*/
+
+  --COLOR_SECTION_CHOOSE_ICON: #6c7c9e;
+  --COLOR_SECTION_CHOOSE_TITLE: #6b7b9f;
+  --COLOR_SECTION_CHOOSE_TEXT: #4d4f51;
+  --COLOR_PINK: #ff6680;
+  --COLOR_PINK_HOVER: #f05d76;
+}
+
+/* Change bootstrap's .container default width */
+@media (min-width: 576px) {
+  .container {
+    max-width: 768px; /*750px;*/
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 992px; /*750px;*/
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1170px; /*970px;*/
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
